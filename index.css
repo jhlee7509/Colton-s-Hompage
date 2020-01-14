@@ -38,7 +38,44 @@ h1 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 150%;
   z-index: -1;
   animation: fadeIn 0.5s linear;
+}
+/* navigation class전체 */
+.navigation {
+  width: 100%;
+  padding: 18px 0;
+  text-align: center;
+}
+/* navigation 각 개체마다 적용 padding으로 확인가능 */
+.navigation a {
+  /* 폰트크기 */
+  font-size: 20px;
+  /* 대문자로 */
+  text-transform: uppercase;
+  padding: 0 18px;
+  /* 글씨의 장식(선)을 지정 */
+  text-decoration: underline overline #fff;
+  color: #fff;
+  /* 폰트 가중치나 굵기를 명시 */
+  font-weight: 500;
+  /* offset-x | offset-y | blur-radius | color */
+  text-shadow: 0 0 20px #000000;
+  /* 두 가지 상태 사이에서 변화가 일어날 때 ex) hover, active 등 */
+  transition: 0.3s;
+}
+.navigation a:hover {
+  color: #333;
+}
+.nav {
+  position: fixed;
+  background-color: #f5bb4e;
+  animation: fadeIn 0.5s linear;
+}
+p {
+  font-size: 18px;
+  padding: 0 40px;
+  text-align: justify;
+  line-height: 200%;
 }
