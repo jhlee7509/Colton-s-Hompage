@@ -1,13 +1,25 @@
 body {
   background-color: #95a5a6;
 }
-
+.header {
+  /* 안덮어 씌워지고 자리차지하는 포지션 relative */
+  position: relative;
+  /* body에 기본적으로 마진값이 8잡혀있어서 붕뜨는거 없애려고 */
+  margin-top: -8px;
+  margin-left: -8px;
+  margin-right: -8px;
+  /* z-index: -1; */
+  /* background-image: url("./images/topMenu.jpg"); */
+  background-color: lightsalmon;
+  background-position-x: left;
+  background-size: cover;
+}
 .btn {
   cursor: pointer;
 }
 
 h1 {
-  color: #2c3e50;
+  color: aqua;
   transition: color 0.5s ease-in-out;
 }
 
@@ -69,9 +81,12 @@ h1 {
   color: #333;
 }
 .nav {
+  /* 포지션 fixed로 고정후 top과 left를 0으로 설정해야지 상단바가 왼쪽이랑 상단에 딱붙는다. 설정해 주지 않았을 때는 붕 떠있었다.*/
   position: fixed;
-  background-color: #f5bb4e;
-  animation: fadeIn 0.5s linear;
+  top: 0;
+  left: 0;
+  background-color: lightsalmon;
+  /* animation: fadeIn 0.5s linear; */
 }
 p {
   font-size: 18px;
