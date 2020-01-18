@@ -1,6 +1,10 @@
 body {
   background-color: #95a5a6;
 }
+body,
+html {
+  height: 150%;
+}
 .header {
   /* 안덮어 씌워지고 자리차지하는 포지션 relative */
   position: relative;
@@ -8,9 +12,10 @@ body {
   margin-top: -8px;
   margin-left: -8px;
   margin-right: -8px;
+  /* width: 100%; */
+  height: 300px;
   /* z-index: -1; */
   /* background-image: url("./images/topMenu.jpg"); */
-  background-color: lightsalmon;
   background-position-x: left;
   background-size: cover;
 }
@@ -50,12 +55,13 @@ h1 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 150%;
+  height: 100%;
   z-index: -1;
   animation: fadeIn 0.5s linear;
 }
 /* navigation class전체 */
 .navigation {
+  top: 0;
   width: 100%;
   padding: 18px 0;
   text-align: center;
@@ -83,9 +89,7 @@ h1 {
 .nav {
   /* 포지션 fixed로 고정후 top과 left를 0으로 설정해야지 상단바가 왼쪽이랑 상단에 딱붙는다. 설정해 주지 않았을 때는 붕 떠있었다.*/
   position: fixed;
-  top: 0;
-  left: 0;
-  background-color: lightsalmon;
+  background-color: peru;
   /* animation: fadeIn 0.5s linear; */
 }
 p {

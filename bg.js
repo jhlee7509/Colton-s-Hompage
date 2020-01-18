@@ -1,4 +1,4 @@
-const body = document.querySelector("body");
+const body = document.querySelector(".header");
 
 const IMG_NUMBER = 5;
 
