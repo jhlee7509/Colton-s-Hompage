@@ -64,6 +64,7 @@ h1 {
   top: 0;
   width: 100%;
   padding: 18px 0;
+  z-index: 1;
   text-align: center;
 }
 /* navigation 각 개체마다 적용 padding으로 확인가능 */
@@ -97,4 +98,68 @@ p {
   padding: 0 40px;
   text-align: justify;
   line-height: 200%;
+}
+.container {
+  position: relative;
+  background: black;
+  max-width: 650px;
+  min-width: 650px;
+  height: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 340px;
+  height: 400px;
+  background: red;
+  margin: 5px;
+  transition: transform 0.5s, background 0.3s ease-in-out;
+}
+.card:nth-child(1) {
+  transform: translate(-170%, -50%);
+}
+.card:nth-child(2) {
+  transform: translate(-50%, -50%);
+}
+.card:nth-child(3) {
+  transform: translate(70%, -50%);
+}
+.card:nth-child(4) {
+  transform: translate(190%, -50%);
+}
+.active {
+  background: yellow;
+  transform: translate(-50%, -50%) scale(1.1) !important;
+}
+.next .card:nth-child(1) {
+  transform: translate(-290%, -50%);
+}
+.next .card:nth-child(2) {
+  transform: translate(-170%, -50%);
+}
+.next .card:nth-child(3) {
+  transform: translate(-50%, -50%);
+}
+.next .card:nth-child(4) {
+  transform: translate(70%, -50%);
+}
+.reset .card {
+  transition: none;
+}
+.reset .card .card:nth-child(1) {
+  transform: translate(-170%, -50%);
+}
+.reset .card .card:nth-child(2) {
+  transform: translate(-50%, -50%);
+}
+.reset .card .card:nth-child(3) {
+  transform: translate(70%, -50%);
+}
+.reset .card .card:nth-child(4) {
+  transform: translate(190%, -50%);
 }
