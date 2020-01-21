@@ -6,23 +6,39 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+  <!-- 헤더 -->
     <div class="header">
+      <!-- 상단 내비게이션 -->
       <div class="navigation">
         <a href="#">Home</a>
         <a href="./about.html">About</a>
         <a href="#">Contact</a>
       </div>
+      <!-- 캐러샐 슬라이더 -->
+      <div id="slider">
+        <div class="slider__item"><p>1</p>
+          <img src="./images/1.jpg" class="bgImage">
+        </div>
+        <div class="slider__item"><p>2</p>
+          <img src="./images/2.jpg" class="bgImage">
+        </div>
+        <div class="slider__item"><p>3</p>
+          <img src="./images/3.jpg" class="bgImage">
+        </div>
+        <div class="slider__item"><p>4</p>
+          <img src="./images/4.jpg" class="bgImage">
+        </div>
+        <div class="slider__item"><p>5</p>
+          <img src="./images/5.jpg" class="bgImage">
+        </div>
+      </div>
+  <script src="slider.js"></script>
     </div>
+      
     <p>
       연습을 위해서 제작중인 페이지입니다.
       저희 어머니의 가게 홍보사이트를 만들어 볼 생각입니다.
     </p>
-    <div class="container">
-      <div class="card"></div>
-      <div class="card active"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-    </div>
     <div class="js-clock">
       <h1>00:00</h1>
     </div>
@@ -35,10 +51,18 @@
     </form>
     <ul class="js-toDoList"></ul>
     <span class="js-weather"></span>
+
+    <div class="container">
+      <div class="card"></div>
+      <div class="card active"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </div>
+
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>
-    <script src="bg.js"></script>
+    <!-- <script src="bg.js"></script> -->
     <script src="weather.js"></script>
     <script src="navigation.js"></script>
     <script src="scrollingCards.js"></script>
