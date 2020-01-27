@@ -91,12 +91,13 @@ h1 {
 .nav {
   /* 포지션 fixed로 고정후 top과 left를 0으로 설정해야지 상단바가 왼쪽이랑 상단에 딱붙는다. 설정해 주지 않았을 때는 붕 떠있었다.*/
   position: fixed;
-  background-color: peru;
+  background-color: darkkhaki;
   /* animation: fadeIn 0.5s linear; */
 }
 p {
   font-size: 18px;
   padding: 0 40px;
+  /* justify는 좌우정렬 */
   text-align: justify;
   line-height: 200%;
 }
@@ -164,7 +165,7 @@ p {
 .reset .card .card:nth-child(4) {
   transform: translate(190%, -50%);
 }
-
+/* 오버레이 캐러셀 슬라이더 */
 .slider {
   width: 100%;
   position: relative;
@@ -193,4 +194,38 @@ p {
 .showing {
   z-index: 1;
   opacity: 1;
+}
+
+/* 스탠다드 캐러셀 슬라이더 */
+.carousel-container {
+  width: 900px;
+  margin: 30px auto;
+  border: 0px solid #000;
+  overflow: hidden;
+  position: relative;
+}
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  height: 450px;
+}
+#prevBtn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+  width: 20px;
+  height: 36px;
+  background: url(img/carousel_prevBtn.png) no-repeat;
+  text-indent: -9999px;
+}
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0%, -50%);
+  width: 20px;
+  height: 36px;
+  background: url(img/carousel_nextBtn.png) no-repeat;
+  text-indent: -9999px;
 }
